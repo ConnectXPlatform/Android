@@ -2,6 +2,7 @@
 This Android implementation lets you connect to the backend server and communicate with other devices that are on the same server.
 
 When openning the app for the first time you would be asked to input the URL for the backend server, and the ports for the relevant services:
+
 ![Log in screen](https://github.com/user-attachments/assets/74dfb5f2-b7ef-47dc-96c8-f57c553c73b9)
 ![image](https://github.com/user-attachments/assets/83368ef8-7b18-4fad-9c68-4e46600b260f)
 
