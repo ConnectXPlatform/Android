@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sagiziv.connectx.customviews.Label xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:prefixWidthPercentage="0.6"
+    app:prefix="@string/devices"
+    app:prefixTextSize="@dimen/label_text_size"
+    android:layout_marginBottom="2dp"
+    app:defaultText="@string/description_label_prefix">
+
+</com.sagiziv.connectx.customviews.Label>

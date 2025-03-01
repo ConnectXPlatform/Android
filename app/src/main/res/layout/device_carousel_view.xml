@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/device_carousel_LAY_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:strokeColor="@color/electric_cyan"
+        app:strokeWidth="2dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sky_blue"
+            android:orientation="vertical"
+            android:paddingVertical="15dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/device_carousel_IMG_icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/arduino_nano" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/device_carousel_LBL_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Device Name"
+                    android:textSize="@dimen/main_title_size"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dividerColor="@color/white"
+                    app:dividerInsetEnd="15dp"
+                    app:dividerInsetStart="15dp"
+                    app:dividerThickness="5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/device_carousel_LBL_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/online_status"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sub_title_size"
+                    android:textStyle="bold" />
+
+                <com.sagiziv.connectx.customviews.Label
+                    android:id="@+id/device_carousel_LBL_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    app:prefix="@string/id_label_prefix"
+                    app:prefixWidthPercentage="0.4" />
+
+                <com.sagiziv.connectx.customviews.Label
+                    android:id="@+id/device_carousel_LBL_status_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    app:defaultText="24/10/2023 10:15"
+                    app:prefix="@string/online_since"
+                    app:prefixWidthPercentage="0.4" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:labelFor="@id/device_carousel_LBL_description"
+                    android:text="@string/description_label_prefix"
+                    android:textSize="@dimen/label_prefix_size"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/device_carousel_LBL_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="Lorem ipsum"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/label_text_size" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

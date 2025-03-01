@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Device created successfully. Use the following credentials on your microcontroller"
+        android:textSize="@dimen/sub_title_size"
+        android:layout_marginBottom="15dp"/>
+
+    <com.sagiziv.connectx.customviews.Label
+        android:id="@+id/created_device_LBL_uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefix="User id:"
+        app:prefixWidthPercentage="0.25"
+        android:layout_marginBottom="5dp"/>
+
+    <com.sagiziv.connectx.customviews.Label
+        android:id="@+id/created_device_LBL_did"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefix="Device id:"
+        app:prefixWidthPercentage="0.3" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

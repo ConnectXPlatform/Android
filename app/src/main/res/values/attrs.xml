@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="title" format="string" localization="suggested" />
+    <attr name="textColor" format="color" />
+
+    <declare-styleable name="CollapsableView">
+        <!-- State of the CollapsableView: close or open -->
+        <attr name="state" format="enum">
+            <enum name="close" value="10" />
+            <enum name="open" value="20" />
+        </attr>
+
+        <!-- Title of the CollapsableView -->
+        <attr name="title" />
+
+        <!-- Size of the title text in the CollapsableView -->
+        <attr name="titleSize" format="dimension" />
+
+        <!-- Color of the title text in the CollapsableView -->
+        <attr name="titleColor" format="color" />
+
+        <!-- Background color of the content in the CollapsableView -->
+        <attr name="contentBackground" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CollapsableViewGroup">
+        <attr name="defaultOpenedView" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="Label">
+        <attr name="prefix" format="string" localization="suggested" />
+        <attr name="defaultText" format="string" localization="suggested" />
+        <attr name="prefixTextSize" format="dimension" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="textColor" />
+        <!--  A value from 0 to 1 (inclusive) that determines what percentage of the
+        parent's width will be used for this label's prefix.-->
+        <attr name="prefixWidthPercentage" format="float" />
+    </declare-styleable>
+    <declare-styleable name="SelectableButton">
+        <attr name="title" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" />
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SelectableButtonsGroup">
+        <attr name="defaultSelectedView" format="integer" />
+    </declare-styleable>
+</resources>

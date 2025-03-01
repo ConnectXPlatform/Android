@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        app:strokeColor="@color/electric_cyan"
+        app:strokeWidth="1.5dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sky_blue"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/power_button_component_LBL_header"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:text="Example text"
+                android:textSize="@dimen/label_prefix_size" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/power_button_component_IMG"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:padding="15dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_power_icon" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <View
+        android:id="@+id/draggable_VIEW_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:elevation="1dp" />
+
+</RelativeLayout>

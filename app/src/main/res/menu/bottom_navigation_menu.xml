@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:icon="@drawable/menu_control_panels_icon"
+        android:tooltipText="Control panels"
+        android:title="CONTROL PANELS"/>
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:icon="@drawable/menu_devices_icon"
+        android:tooltipText="Devices"
+        android:title="DEVICES"/>
+</menu>

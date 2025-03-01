@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:backgroundTint="@color/sky_blue"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:strokeColor="@color/electric_cyan"
+        app:strokeWidth="2dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/prompt_LBL_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Nothing to see here…"
+            android:textSize="@dimen/main_title_size"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

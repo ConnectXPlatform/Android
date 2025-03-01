@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:strokeColor="@color/electric_cyan"
+        app:strokeWidth="1.5dp">
+
+        <com.sagiziv.connectx.customviews.Label
+            android:id="@+id/label_component_LBL_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sky_blue"
+            app:defaultText="value"
+            app:labelTextSize="@dimen/label_text_size"
+            app:prefix="label"
+            app:prefixTextSize="@dimen/label_prefix_size"
+            app:prefixWidthPercentage="0.5"
+            app:textColor="@color/white" />
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <View
+        android:id="@+id/draggable_VIEW_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:elevation="1dp" />
+
+</RelativeLayout>

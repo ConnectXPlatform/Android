@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/device_info_LBL_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/online_status"
+                android:textSize="@dimen/main_title_size"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <com.sagiziv.connectx.customviews.Label
+                android:id="@+id/device_info_LBL_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:prefix="Id:"
+                app:prefixWidthPercentage="0.4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <com.sagiziv.connectx.customviews.Label
+                android:id="@+id/device_info_LBL_status_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:defaultText="24/10/2023 10:15"
+                app:prefix="Online since:"
+                app:prefixWidthPercentage="0.4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <com.sagiziv.connectx.customviews.CollapsableViewGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:defaultOpenedView="0">
+
+                <com.sagiziv.connectx.customviews.CollapsableView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sky_blue"
+                    app:contentBackground="@color/sky_blue"
+                    app:title="@string/topics">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/device_info_LST_topic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </com.sagiziv.connectx.customviews.CollapsableView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <com.sagiziv.connectx.customviews.CollapsableView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sky_blue"
+                    app:contentBackground="@color/sky_blue"
+                    app:state="close"
+                    app:title="Control Panels">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Click me" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Click me" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Click me" />
+                </com.sagiziv.connectx.customviews.CollapsableView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <com.sagiziv.connectx.customviews.CollapsableView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sky_blue"
+                    app:contentBackground="@color/sky_blue"
+                    app:state="open"
+                    app:title="Description">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/device_info_LBL_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:text="Hello"
+                        android:textSize="@dimen/label_text_size" />
+                </com.sagiziv.connectx.customviews.CollapsableView>
+            </com.sagiziv.connectx.customviews.CollapsableViewGroup>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

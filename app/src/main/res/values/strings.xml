@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name" translatable="false">ConnectX</string>
+    <string name="online_status">Online</string>
+    <string name="offline_status">Offline</string>
+    <string name="topics">Topics</string>
+    <string name="online_since">Online since:</string>
+    <string name="offline_since">Offline since:</string>
+    <string name="id_label_prefix">Id:</string>
+    <string name="description_label_prefix">Description:</string>
+    <string name="control_panels">Control Panels</string>
+    <string name="devices">Devices</string>
+    <string name="cant_delete">Can\'t delete this item</string>
+    <string name="delete_confirmation_message">Are you sure you want to delete this item?</string>
+    <string name="confirm_delete">Yes, delete</string>
+    <string name="cancel_delete">Oops, no</string>
+    <string name="delete_confirmation_title">Delete item</string>
+    <string name="retry_button">Retry</string>
+    <string name="error_title">Error</string>
+    <string name="device_creation_message">Create new device</string>
+    <string name="create_button">Create</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="ok_button">Ok</string>
+    <string name="device_created_title">Successfully created device</string>
+    <string name="no_items_found">No items found</string>
+    <string name="empty_input">Input can\'t be empty!</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/draggable_LAY_component"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple"/>
+    <View
+        android:id="@+id/draggable_VIEW_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/deep_azure"/>
+
+</RelativeLayout>

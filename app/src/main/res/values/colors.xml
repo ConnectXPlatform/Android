@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#8D8D8D</color>
+
+    <color name="purple">#9520f8</color>
+    <color name="light_purple">#ad4efc</color>
+    <color name="pink">#c480fd</color>
+
+    <color name="midnight_blue">#1a23cc</color>
+    <color name="royal_blue">#1747E6</color>
+    <color name="sky_blue">#267FFC</color>
+    <color name="deep_azure">#1793E6</color>
+    <color name="electric_cyan">#19CCFE</color>
+
+</resources>

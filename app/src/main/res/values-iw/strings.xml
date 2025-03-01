@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="online_status">מחובר</string>
+    <string name="offline_status">מנותק</string>
+    <string name="topics">נושאים</string>
+    <string name="online_since">מחובר מ:</string>
+    <string name="offline_since">מנותק מ:</string>
+    <string name="id_label_prefix">מזהה:</string>
+    <string name="description_label_prefix">תיאור:</string>
+    <string name="control_panels">לוחות בקרה</string>
+    <string name="devices">מכשירים</string>
+    <string name="cant_delete">לא ניתן למחוק פריט זה</string>
+    <string name="delete_confirmation_message">האם אתם בטוחים שברצונכם למחוק פריט זה?</string>
+    <string name="confirm_delete">כן, מחק</string>
+    <string name="cancel_delete">אופס, לא</string>
+    <string name="delete_confirmation_title">מחק פריט</string>
+    <string name="retry_button">נסה שוב</string>
+    <string name="error_title">שגיאה</string>
+    <string name="device_creation_message">צור מכשיר חדש</string>
+    <string name="create_button">צור</string>
+    <string name="cancel_button">ביטול</string>
+    <string name="ok_button">אישור</string>
+    <string name="device_created_title">המכשיר נוצר בהצלחה</string>
+    <string name="no_items_found">לא נמצאו פריטים</string>
+    <string name="empty_input">קלט לא יכול להיות ריק!</string>
+</resources>
